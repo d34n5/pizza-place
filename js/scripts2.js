@@ -1,5 +1,5 @@
 function Pizza (size, toppings) {
-  this.sized = size;
+  this.size = size;
   this.toppings = toppings;
 }
 
@@ -14,7 +14,6 @@ function resetFields() {
 
 
 
-
 $(document).ready(function() {
   $("form").submit(function(event) {
 
@@ -22,7 +21,7 @@ $(document).ready(function() {
     var inputtedToppings = parseInt($("input:checkbox:checked").val());
 
     var newPizza = (inputtedSize + inputtedToppings + "$");
-    // var pizzaOrdered = new Pizza (Pizza.sized, Pizza.toppings);
+    var pizzaOrdered = new Pizza (Pizza.sized, Pizza.toppings);
 
     $("#costDisplay").show();
     $("#costDisplay").text(newPizza);
