@@ -7,20 +7,25 @@ function Pizza (size, toppings) {
 //   return this.sized + "-sized Pizza, topped with: " + this.toppings ;
 // }
 
-function resetFields() {
-  $(".sizes").val("");
-  $("input.pizzaToppings").val("");
-}
+
+// function resetFields() {
+//   $(".sizes").val("");
+//   $("input.pizzaToppings").val("");
+// }
 
 
 
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $("form#orderPizza").submit(function(event) {
+    event.preventDefault();
 
-    var inputtedSize = parseInt($(".sizes").val());
-    var inputtedToppings = parseInt($("input:checkbox:checked").val());
+    // var sizeOrdered = $(".sizes").??
+    // var toppingOrdered = $(".toppings").??
 
-    var newPizza = (inputtedSize + inputtedToppings + "$");
+    var sizeCost = parseInt($(".sizes").val());
+    var toppingsCost = parseInt($("input:checkbox:checked").val());
+
+    var newPizza = (sizeCost + toppingsCost + "$");
     var pizzaOrdered = new Pizza (Pizza.sized, Pizza.toppings);
 
     $("#costDisplay").show();
@@ -30,6 +35,6 @@ $(document).ready(function() {
     // $("#orderDetails").text(pizzaOrdered);
 
 
-    event.preventDefault();
+
   });
 });

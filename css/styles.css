@@ -1,3 +1,23 @@
 /*#orderDetails {
   display: none;
 }*/
+
+.jumbotron {
+  height: 35vh;
+  background-image: url("http://www.publicdomainpictures.net/pictures/190000/velka/banner-1469201677sXG.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 19vh;
+  text-align: center;
+  color: white;
+  background-color: ivory;
+}
+
+body {
+  background-color: ivory;
+}
+
+img {
+  margin: 30px;
+
+}

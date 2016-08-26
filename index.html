@@ -13,60 +13,60 @@
       <div class="jumbotron">
         <h1>Pepe's New Haven Apizza</h1>
       </div>
-
       <div class="col-sm-4">
         <h3>Pick a Size</h3>
-        <form>
+        <form id="orderPizza">
           <select class="form-control sizes">
-             <option value="6">Small  $6</option>
-             <option value="9">Medium  $9</option>
-             <option value="12">Large  $12</option>
-             <option value="15">Xtra-large  $15</option>
+             <option id="small" value="6">Small  $6</option>
+             <option id="medium" value="9">Medium  $9</option>
+             <option id="large" value="12">Large  $12</option>
+             <option id="xlarge" value="15">Xtra-large  $15</option>
           </select>
         </div>
-          <div class="col-sm-4">
-            <h3>Choose Your Toppings: Add $1 each</h3>
-            <div class="form-group">
-              <label for="cheese">
-                <input type="checkbox" id="cheese" value="1">Cheese <br>
-              </label>
-              <label for="pepperoni">
-                <input type="checkbox" id="pepperoni" value="2">Pepperoni <br>
-              </label>
-              <label for="sausage">
-                <input type="checkbox" id="sausage" value="2">Sausage <br>
-              </label>
-              <label for="bacon">
-                <input type="checkbox" id="bacon" value="2">Bacon <br>
-              </label>
-              <label for="onion">
-                <input type="checkbox" id="onion" value="1">Onion <br>
-              </label>
-              <label for="peppers">
-                <input type="checkbox" id="peppers" value="1">Peppers <br>
-              </label>
-              <label for="spinach">
-                <input type="checkbox" id="spinach" value="1">Spinach <br>
-              </label>
-              <label for="mushrooms">
-                <input type="checkbox" id="mushrooms" value="1">Mushrooms <br>
-              </label>
-            </div>
-            <button type="submit" class="btn btn-success btn-lg">Place Order</button>
-          </div>
-        </form>
         <div class="col-sm-4">
-          <h3>Your Pizza Costs:</h3>
-          <div id="costDisplay">
-
+          <h3>Choose Your Toppings: Add $1 each</h3>
+          <div class="form-group">
+            <label for="cheese">
+              <input type="checkbox" id="cheese" value="1">Cheese <br>
+            </label>
+            <label for="pepperoni">
+              <input type="checkbox" id="pepperoni" value="2">Pepperoni <br>
+            </label>
+            <label for="sausage">
+              <input type="checkbox" id="sausage" value="2">Sausage <br>
+            </label>
+            <label for="bacon">
+              <input type="checkbox" id="bacon" value="2">Bacon <br>
+            </label>
+            <label for="onion">
+              <input type="checkbox" id="onion" value="1">Onion <br>
+            </label>
+            <label for="peppers">
+              <input type="checkbox" id="peppers" value="1">Peppers <br>
+            </label>
+            <label for="spinach">
+              <input type="checkbox" id="spinach" value="1">Spinach <br>
+            </label>
+            <label for="mushrooms">
+              <input type="checkbox" id="mushrooms" value="1">Mushrooms <br>
+            </label>
           </div>
-          <br>
-          <h3>Your Pizza Details:</h3>
-          <div id="orderDetails">
-
-          </div>
-
+          <button type="submit" class="btn btn-success btn-lg">Place Order</button>
+        </div>
+      </form>
+      <div class="col-sm-4">
+        <h3>Your Pizza Costs:</h3>
+        <div id="costDisplay">
+        </div>
+        <br>
+        <h3>Your Pizza Details:</h3>
+        <div id="orderDetails">
         </div>
       </div>
+
+
+      <img src="http://www.lookct.com/wp-content/uploads/2012/11/Frank-Pepe.jpg" align="bottom" alt="new haven pizza" height="400px" width="600px" />
+
+    </div>
   </body>
 </html>
