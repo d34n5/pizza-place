@@ -1,10 +1,10 @@
 function Pizza (size, toppings) {
-  this.size = size;
+  this.sized = size;
   this.toppings = toppings;
 }
 
 Pizza.prototype.sale = function () {
-  return this.size + "-sized Pizza, 111 topped with: " + this.toppings;
+  return this.sized + "-sized Pizza, 111 topped with: " + this.toppings;
 }
 
 

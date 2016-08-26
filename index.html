@@ -6,7 +6,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/jquery-3.1.0.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
   </head>
   <body>
     <div class="container">
@@ -16,21 +16,13 @@
 
       <div class="col-sm-4">
         <h3>Pick a Size</h3>
-        <form id="newPizza">
-          <div class="form-group">
-            <label for="small">
-              <input type="radio" class="pizzaSize" name="size" id="small" value="6">Small $6    <br>
-            </label>
-            <label for="medium">
-              <input type="radio" class="pizzaSize" name="size" id="medium" value="9">Medium $9    <br>
-            </label>
-            <label for="large">
-              <input type="radio" class="pizzaSize" name="size" id="large" value="12">Large $12    <br>
-            </label>
-            <label for="xlarge">
-              <input type="radio" class="pizzaSize" name="size" id="xlarge" value="15">Xtra-Large $15   <br>
-            </label>
-          </div>
+        <form>
+          <select class="form-control sizes">
+             <option value="6">Small  $6</option>
+             <option value="9">Medium  $9</option>
+             <option value="12">Large  $12</option>
+             <option value="15">Xtra-large  $15</option>
+          </select>
         </div>
           <div class="col-sm-4">
             <h3>Choose Your Toppings: Add $1 each</h3>
@@ -39,10 +31,10 @@
                 <input type="checkbox" class="pizzaToppings" name="toppings" id="cheese" value="1">Cheese <br>
               </label>
               <label for="pepperoni">
-                <input type="checkbox" class="pizzaToppings" name="toppings" id="pepperoni" value="1">Pepperoni <br>
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="pepperoni" value="2">Pepperoni <br>
               </label>
               <label for="sausage">
-                <input type="checkbox" class="pizzaToppings" name="toppings" id="sausage" value="1">Sausage <br>
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="sausage" value="3">Sausage <br>
               </label>
               <label for="bacon">
                 <input type="checkbox" class="pizzaToppings" name="toppings" id="bacon" value="1">Bacon <br>
@@ -60,11 +52,11 @@
                 <input type="checkbox" class="pizzaToppings" name="toppings" id="mushrooms" value="1">Mushrooms <br>
               </label>
             </div>
-            <button type="submit" class="btn btn-success">Place Order</button>
+            <button type="submit" class="btn btn-success btn-lg">Place Order</button>
           </div>
         </form>
         <div class="col-sm-4">
-          <h3>Your order details:</h3>
+          <h3>Your Pizza Cost:</h3>
           <div id="orderDetails">
 
           </div>
