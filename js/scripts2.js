@@ -22,10 +22,14 @@ $(document).ready(function() {
     var inputtedToppings = parseInt($("input:checkbox:checked").val());
 
     var newPizza = (inputtedSize + inputtedToppings + "$");
+    var pizzaOrdered = new Pizza (Pizza.sized, Pizza.toppings);
+
+    $("#costDisplay").show();
+    $("#costDisplay").text(newPizza);
 
     $("#orderDetails").show();
-    $("#orderDetails").text(newPizza);
-    //$("div#orderDetails").append(newPizza.pizzaSale);
+    $("#orderDetails").text(pizzaOrdered);
+
 
     event.preventDefault();
   });
