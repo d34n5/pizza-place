@@ -3,9 +3,11 @@ function Pizza (size, toppings) {
   this.toppings = toppings;
 }
 
-// Pizza.prototype.pizzaSale = function() {
-//   return this.sized + "-sized Pizza, topped with: " + this.toppings ;
-// }
+//Pizza.prototype.pizzaSale = function() {
+  // return this.sized + "-sized Pizza, topped with: " + this.toppings ;
+//}
+
+ 
 
 
 // function resetFields() {
@@ -20,19 +22,21 @@ $(document).ready(function() {
     event.preventDefault();
 
     // var sizeOrdered = $(".sizes").??
-    // var toppingOrdered = $(".toppings").??
+    // var toppingsOrdered = $(".toppings").??
 
     var sizeCost = parseInt($(".sizes").val());
     var toppingsCost = parseInt($("input:checkbox:checked").val());
 
-    var newPizza = (sizeCost + toppingsCost + "$");
+    var pizzaCost = (sizeCost + toppingsCost + "$");
     var pizzaOrdered = new Pizza (Pizza.sized, Pizza.toppings);
 
     $("#costDisplay").show();
-    $("#costDisplay").text(newPizza);
+    $("#costDisplay").text(pizzaCost);
 
     // $("#orderDetails").show();
     // $("#orderDetails").text(pizzaOrdered);
+
+    // $("#orderDetails").text(newPizza.pizzaSale());
 
 
 
