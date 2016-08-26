@@ -2,13 +2,74 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Pepe's New Haven Apizza</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pepe's New Haven Apizza</h1>
+      </div>
 
+      <div class="col-sm-4">
+        <h3>Pick a Size</h3>
+        <form id="newPizza">
+          <div class="form-group">
+            <label for="small">
+              <input type="radio" class="pizzaSize" name="size" id="small" value="6">Small $6    <br>
+            </label>
+            <label for="medium">
+              <input type="radio" class="pizzaSize" name="size" id="medium" value="9">Medium $9    <br>
+            </label>
+            <label for="large">
+              <input type="radio" class="pizzaSize" name="size" id="large" value="12">Large $12    <br>
+            </label>
+            <label for="xlarge">
+              <input type="radio" class="pizzaSize" name="size" id="xlarge" value="15">Xtra-Large $15   <br>
+            </label>
+          </div>
+        </div>
+          <div class="col-sm-4">
+            <h3>Choose Your Toppings: Add $1 each</h3>
+            <div class="form-group">
+              <label for="cheese">
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="cheese" value="1">Cheese <br>
+              </label>
+              <label for="pepperoni">
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="pepperoni" value="1">Pepperoni <br>
+              </label>
+              <label for="sausage">
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="sausage" value="1">Sausage <br>
+              </label>
+              <label for="bacon">
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="bacon" value="1">Bacon <br>
+              </label>
+              <label for="onion">
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="onion" value="1">Onion <br>
+              </label>
+              <label for="peppers">
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="peppers" value="1">Peppers <br>
+              </label>
+              <label for="spinach">
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="spinach" value="1">Spinach <br>
+              </label>
+              <label for="mushrooms">
+                <input type="checkbox" class="pizzaToppings" name="toppings" id="mushrooms" value="1">Mushrooms <br>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-success">Place Order</button>
+          </div>
+        </form>
+        <div class="col-sm-4">
+          <h3>Your order details:</h3>
+          <div id="orderDetails">
+
+          </div>
+
+        </div>
+      </div>
   </body>
 </html>

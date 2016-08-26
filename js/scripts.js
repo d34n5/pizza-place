@@ -22,6 +22,11 @@ $(document).ready(function() {
 
     var pizzaOrdered = (inputtedSize + "-sized Pizza.  222  Topped with:  " + inputtedToppings);
 
+    var sizeCost = parseInt($(".pizzaSize").val());
+    var toppingsCost = parseInt($(".pizzaToppings").val());
+
+    var pizzaCost = (sizeCost + toppingsCost + "$");
+
     $("#orderDetails").show();
     $("orderDetails").text(newPizza);
     $("input#pizza").val();
