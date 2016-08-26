@@ -4,7 +4,7 @@
 
 ## Week 4 Independent Project by Dean Scelza @ Epicodus, 8-26-16 ##
 
-### Please check out this work on gh-pages: https://d34n5.github.io/pizza
+### Please check out this work on gh-pages: https://d34n5.github.io/pizza-place
 
 ## Description & Technologies Used
 This webpage allows users to order a pizza.  Page displays price and order details using JS objects and prototypes.
