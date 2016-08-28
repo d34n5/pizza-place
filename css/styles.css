@@ -1,23 +1,23 @@
-/*#orderDetails {
-  display: none;
-}*/
-
-.jumbotron {
-  height: 35vh;
-  background-image: url("http://www.publicdomainpictures.net/pictures/190000/velka/banner-1469201677sXG.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-top: 19vh;
+h1 {
   text-align: center;
-  color: white;
-  background-color: ivory;
+  color: black;
+  font-weight: bold;
 }
 
 body {
-  background-color: ivory;
+  background-image: url("http://www.dimagiospizza.com/sites/all/themes/dimagio/images/global/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 21vh;
+  font-weight: bold;
+  color: black;
+  background-color: darkgreen;
 }
 
-img {
-  margin: 30px;
+#costDisplay {
+  font-size: 2em;
+}
 
+#orderButton {
+  float:right;
 }
