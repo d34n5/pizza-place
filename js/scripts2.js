@@ -3,9 +3,9 @@ function Pizza (size, toppings) {
   this.toppings = [];
 }
 
-Pizza.prototype.pizzaSale = function() {
-  return this.size + "-sized Pizza, topped with: " + this.toppings ;
-}
+// Pizza.prototype.pizzaSale = function() {
+//   return this.size + "-sized Pizza, topped with: " + this.toppings ;
+// }
 
 //---------logic split -----------//
 
@@ -13,8 +13,8 @@ $(document).ready(function() {
   $("form#orderPizza").submit(function(event) {
     event.preventDefault();
 
-    var sizeOrdered = $("#selectId option:selected").attr("id")
-    var toppingsOrdered = $(":checkbox").map(function() {
+    var sizeOrdered = $('#pizzaSize').find('option:selected').text();
+    var toppingsOrdered = $("input:checkbox:checked").map(function() {
       return this.id;
     })
     .get()
