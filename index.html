@@ -14,12 +14,20 @@
       <div class="col-xs-3">
         <h3>Pick a Size</h3>
         <form id="orderPizza">
-          <select class="form-control sizes">
-             <option id="small" value="6">Small  $6</option>
-             <option id="medium" value="9">Medium  $9</option>
-             <option id="large" value="12">Large  $12</option>
-             <option id="xlarge" value="15">Xtra-large  $15</option>
+          <select class="form-control sizes" id="pizzaSize">
+             <option id="small" value="6">Small</option>
+             <option id="medium" value="9">Medium</option>
+             <option id="large" value="12">Large</option>
+             <option id="xlarge" value="15">XtraLarge</option>
           </select>
+          <br>
+          <h4>Base Prices</h4>
+          <ul>
+            <li>Small: $6</li>
+            <li>Medium:  $9</li>
+            <li>Large: $12</li>
+            <li>XL: $15</li>
+          </ul>
         </div>
         <div class="col-xs-3">
           <h3>Choose Your Toppings: Add $1 each</h3>
@@ -49,7 +57,8 @@
               <input type="checkbox" id="mushrooms" value="1">Mushrooms <br>
             </label>
           </div>
-          <button type="submit" id="orderButton" class="btn btn-success btn-lg">Place Order</button>
+          <button type="submit" id="orderButton" class="btn btn-success btn-lg">Place Order </button>
+          <br>
         </div>
       </form>
       <div class="col-xs-6">
