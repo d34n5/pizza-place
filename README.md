@@ -1,4 +1,4 @@
-# Pepe's New Haven Apizza #
+# Pepe's Pizza #
 
 #### Javascript-powered Pizza Ordering Page ####
 
