@@ -12,6 +12,7 @@ body {
   font-weight: bold;
   color: black;
   background-color: darkgreen;
+  margin-bottom: 20px;
 }
 
 #costDisplay {
