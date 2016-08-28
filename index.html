@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pepe's New Haven Apizza</title>
+    <title>Pepe's Pizza</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/jquery-3.1.0.js"></script>
@@ -10,10 +10,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Pepe's New Haven Apizza</h1>
-      </div>
-      <div class="col-sm-4">
+      <h1>Pepe's Pizza</h1>
+      <div class="col-xs-3">
         <h3>Pick a Size</h3>
         <form id="orderPizza">
           <select class="form-control sizes">
@@ -23,7 +21,7 @@
              <option id="xlarge" value="15">Xtra-large  $15</option>
           </select>
         </div>
-        <div class="col-sm-4">
+        <div class="col-xs-3">
           <h3>Choose Your Toppings: Add $1 each</h3>
           <div class="form-group">
             <label for="cheese">
@@ -51,10 +49,10 @@
               <input type="checkbox" id="mushrooms" value="1">Mushrooms <br>
             </label>
           </div>
-          <button type="submit" class="btn btn-success btn-lg">Place Order</button>
+          <button type="submit" id="orderButton" class="btn btn-success btn-lg">Place Order</button>
         </div>
       </form>
-      <div class="col-sm-4">
+      <div class="col-xs-6">
         <h3>Your Pizza Costs:</h3>
         <div id="costDisplay">
         </div>
@@ -63,7 +61,6 @@
         <div id="orderDetails">
         </div>
       </div>
-      <img src="http://www.lookct.com/wp-content/uploads/2012/11/Frank-Pepe.jpg" align="bottom" alt="new haven pizza" height="400px" width="600px" />
     </div>
   </body>
 </html>
