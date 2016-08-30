@@ -12,13 +12,13 @@ This webpage allows users to order a pizza.  Page displays price and order detai
 ## Specifications
 1. Take user inputs and calculate cost of pizza.   
  - Ex. In: small, no toppings -OR- large, with 4 toppings
- - Ex. Out:  $6 -OR- $20
+ - Ex. Out:  $6 -OR- $16
 2. Return pizza price to user
- - Ex. In: small, ['pepperoni', 'onions']
+ - Ex. In: small, with 4 toppings
  - Ex. Out: 10($)
 3. Display order details to user.
  - Ex. In: small, ['pepperoni', 'onions']
- - Ex. Out: "Small-sized pizza, topped with: pepperoni, onions"
+ - Ex. Out: "Small-sized pizza, with 2 toppings."
 
 ## Installation & Set-Up
 1. Clone the repository: https://github.com/d34n5/pizza
