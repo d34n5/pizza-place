@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pepe's Pizza</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/jquery-3.1.0.js"></script>
-    <script src="js/scripts2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pepe's Pizza</title>
   </head>
   <body>
     <div class="container">
@@ -14,7 +14,7 @@
       <div class="col-xs-3">
         <h3>Pick a Size</h3>
         <form id="orderPizza">
-          <select class="form-control sizes" id="pizzaSize">
+          <select class="form-control sizes" id="pizza-size">
              <option id="small" value="6">Small</option>
              <option id="medium" value="9">Medium</option>
              <option id="large" value="12">Large</option>
@@ -30,31 +30,31 @@
           </ul>
         </div>
         <div class="col-xs-3">
-          <h3>Unlimited Toppings:  Add $4</h3>
-          <div class="form-group">
+          <h3>Choose Your Toppings: Add $2 each </h3>
+          <div class="form-group toppings">
             <label for="cheese">
-              <input type="checkbox" id="cheese" value="4">Xtra-Cheese <br>
+              <input type="checkbox" name="topping" id="cheese" value="2">Cheese <br>
             </label>
             <label for="pepperoni">
-              <input type="checkbox" id="pepperoni" value="4">Pepperoni <br>
+              <input type="checkbox" name="topping" id="pepperoni" value="2">Pepperoni <br>
             </label>
             <label for="sausage">
-              <input type="checkbox" id="sausage" value="4">Sausage <br>
+              <input type="checkbox" name="topping" id="sausage" value="2">Sausage <br>
             </label>
             <label for="bacon">
-              <input type="checkbox" id="bacon" value="4">Bacon <br>
+              <input type="checkbox" name="topping" id="bacon" value="2">Bacon <br>
             </label>
             <label for="onion">
-              <input type="checkbox" id="onion" value="4">Onion <br>
+              <input type="checkbox" name="topping" id="onion" value="2">Onion <br>
             </label>
             <label for="peppers">
-              <input type="checkbox" id="peppers" value="4">Peppers <br>
+              <input type="checkbox" name="topping" id="peppers" value="2">Peppers <br>
             </label>
             <label for="spinach">
-              <input type="checkbox" id="spinach" value="4">Spinach <br>
+              <input type="checkbox" name="topping" id="spinach" value="2">Spinach <br>
             </label>
             <label for="mushrooms">
-              <input type="checkbox" id="mushrooms" value="4">Mushrooms <br>
+              <input type="checkbox" name="topping" id="mushrooms" value="2">Mushrooms <br>
             </label>
           </div>
           <button type="submit" id="orderButton" class="btn btn-success btn-lg">Place Order </button>
@@ -62,12 +62,11 @@
         </div>
       </form>
       <div class="col-xs-6">
-        <h3>Your Pizza Costs:</h3>
         <div id="costDisplay">
         </div>
-        <br>
-        <h3>Your Pizza Details:</h3>
-        <div id="orderDetails">
+        <div class="orderDetails">
+          <ul id="orderDetails">
+          </ul>
         </div>
       </div>
     </div>
