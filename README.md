@@ -9,20 +9,16 @@
 ## Description & Technologies Used
 This webpage allows users to order a pizza.  Page displays price and order details using JS objects and prototypes.
 
-
 ## Specifications
-1. Allow user to select pizza size from a select menu and capture associated cost.
- - Ex. In: Small
- - Ex. Out: 6($)
-2. Allow users to select (multiple) pizza toppings from various checkboxes.
- - Ex. In: [cheese, pepperoni, onions]
- - Ex. Out: += 4($)
-3. Return pizza price to user
- - Ex. In: small, ['cheese', 'pepperoni', 'onions']
+1. Take user inputs and calculate cost of pizza.   
+ - Ex. In: small, no toppings -OR- large, with 4 toppings
+ - Ex. Out:  $6 -OR- $20
+2. Return pizza price to user
+ - Ex. In: small, ['pepperoni', 'onions']
  - Ex. Out: 10($)
-4. Display order details to user.
- - Ex. In: small, ['cheese', 'pepperoni', 'onions']
- - Ex. Out: "Small-sized pizza, topped with: cheese, pepperoni, onions"
+3. Display order details to user.
+ - Ex. In: small, ['pepperoni', 'onions']
+ - Ex. Out: "Small-sized pizza, topped with: pepperoni, onions"
 
 ## Installation & Set-Up
 1. Clone the repository: https://github.com/d34n5/pizza
